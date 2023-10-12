@@ -18,6 +18,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "clsx": "^1.2.1",
     "lucide-react": "^0.260.0",

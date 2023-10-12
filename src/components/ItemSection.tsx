@@ -14,7 +14,7 @@ export const ItemSection = (props: {
         <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
           {items.map((item, index) => (
             <div key={index} className='feature text-center'>
-              <div className='mx-auto mb-4 inline-block rounded-full bg-blue-100 p-4'>
+              <div className='mx-auto mb-4 inline-block rounded-full bg-blue-100 p-3'>
                 {item.icon}
               </div>
               <h3 className='mb-4 text-xl font-bold'>{item.title}</h3>
