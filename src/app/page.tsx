@@ -13,7 +13,6 @@ import {
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
-import logo from 'public/images/ascend_logo.png';
 import * as React from 'react';
 import { useState } from 'react';
 
@@ -21,6 +20,8 @@ import Button from '@/components/buttons/Button';
 import TextButton from '@/components/buttons/TextButton';
 import { ItemSection } from '@/components/ItemSection';
 import UnderlineLink from '@/components/links/UnderlineLink';
+
+import logo from '~/images/ascend_logo.png';
 
 /**
  * SVGR Support
