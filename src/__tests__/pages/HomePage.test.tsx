@@ -8,7 +8,9 @@ describe('Homepage', () => {
   it('renders the Components', () => {
     render(<HomePage />);
 
-    const heading = screen.getByText(/A starter for Next.js/i);
+    const heading = screen.getByText(
+      /Revolutionize Your Hiring Process with Ascend Hiring/i
+    );
 
     expect(heading).toBeInTheDocument();
   });
