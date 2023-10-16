@@ -58,12 +58,15 @@ export default function FeatureSection() {
             Everything you need
           </h2>
           <p className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-            Need quality hires quickly? No problem. We can take you from job posting to onboarding under 2 weeks.
+            Need quality hires quickly? No problem. We can take you from job
+            posting to onboarding under 2 weeks.
           </p>
           <p className='mt-6 text-lg leading-8 text-gray-600'>
-          Our innovative solutions empower you to achieve top-tier talent acquisition without delay. 
-          Streamline your hiring process, access the best candidates, and meet your staffing needs with unparalleled efficiency. 
-          Say goodbye to recruitment roadblocks, and welcome speed and quality to your workforce.
+            Our innovative solutions empower you to achieve top-tier talent
+            acquisition without delay. Streamline your hiring process, access
+            the best candidates, and meet your staffing needs with unparalleled
+            efficiency. Say goodbye to recruitment roadblocks, and welcome speed
+            and quality to your workforce.
           </p>
         </div>
       </div>
