@@ -64,6 +64,9 @@ export default function FeatureSection() {
           Our innovative solutions empower you to achieve top-tier talent acquisition without delay. 
           Streamline your hiring process, access the best candidates, and meet your staffing needs with unparalleled efficiency. 
           Say goodbye to recruitment roadblocks, and welcome speed and quality to your workforce.
+          Our innovative solutions empower you to achieve top-tier talent acquisition without delay. 
+          Streamline your hiring process, access the best candidates, and meet your staffing needs with unparalleled efficiency. 
+          Say goodbye to recruitment roadblocks, and welcome speed and quality to your workforce.
           </p>
         </div>
       </div>
