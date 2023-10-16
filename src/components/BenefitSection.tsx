@@ -9,25 +9,25 @@ const benefits = [
   {
     name: 'Save Time',
     description:
-      'Autem reprehenderit aut debitis ut. Officiis harum omnis placeat blanditiis delectus sint vel et voluptatum. Labore asperiores non corporis molestiae.',
+      'Efficient, automated processes from start to finish mean you can focus on what matters most.',
     icon: ClockIcon,
   },
   {
     name: 'Save Money',
     description:
-      'Illum et aut inventore. Ut et dignissimos quasi. Omnis saepe dolorum. Hic autem fugiat. Voluptatem officiis necessitatibus est.',
+      'Reduce hiring costs by 90% with our optimized solutions, while finding better candidates.',
     icon: BanknotesIcon,
   },
   {
     name: 'Find the right people',
     description:
-      'Commodi quam quo. In quasi mollitia optio voluptate et est reiciendis. Ut et sunt id officiis vitae perspiciatis. Et accusantium sapiente.',
+      'Our custom AI solutions ensure you consider only the best candidates for your company.',
     icon: UsersIcon,
   },
   {
     name: 'Hire with confidence',
     description:
-      'Deserunt corrupti praesentium quo vel cupiditate est occaecati ad. Aperiam libero modi similique iure praesentium facilis quo cumque quibusdam.',
+      'Our seamless technical skill assessments, background checks, and automatic HR-enrollment ensure your new hire is up to the task and ready to work as soon as you want.',
     icon: ShieldCheckIcon,
   },
 ];
