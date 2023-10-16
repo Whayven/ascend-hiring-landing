@@ -27,7 +27,7 @@ const benefits = [
   {
     name: 'Hire with confidence',
     description:
-      'Our seamless technical skill assessments, background checks, and automatic HR-enrollment ensure your new hire is up to the task and ready to work as soon as possible',
+      'Our seamless technical skill assessments, background checks, and automatic HR-enrollment ensure your new hire is up to the task and ready to work as soon as you want.',
     icon: ShieldCheckIcon,
   },
 ];

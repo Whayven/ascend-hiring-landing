@@ -26,7 +26,7 @@ const features = [
   {
     name: 'Automated interview scheduling.',
     description:
-      'Schedule screening calls and interviews with candidates autonomously through our platform',
+      'Schedule screening calls and interviews with candidates autonomously through our platform.',
     icon: UserGroupIcon,
   },
   {
@@ -44,7 +44,7 @@ const features = [
   {
     name: 'Configure to your needs.',
     description:
-      "Our system offers you the flexibility to adapt to your unique needs. Easily integrate technical skills assessments, personality tests, or any other specialized evaluation criteria into your hiring process. Craft a personalized recruitment journey that aligns perfectly with your company's goals and values.",
+      "Easily integrate technical skills assessments, personality tests, or any other specialized evaluation criteria into your hiring process. Craft a personalized recruitment journey that aligns perfectly with your company's goals and values.",
     icon: Cog6ToothIcon,
   },
 ];
@@ -58,12 +58,12 @@ export default function FeatureSection() {
             Everything you need
           </h2>
           <p className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-            No server? No problem.
+            Need quality hires quickly? No problem. We can take you from job posting to onboarding under 2 weeks.
           </p>
           <p className='mt-6 text-lg leading-8 text-gray-600'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            impedit perferendis suscipit eaque, iste dolor cupiditate
-            blanditiis.
+          Our innovative solutions empower you to achieve top-tier talent acquisition without delay. 
+          Streamline your hiring process, access the best candidates, and meet your staffing needs with unparalleled efficiency. 
+          Say goodbye to recruitment roadblocks, and welcome speed and quality to your workforce.
           </p>
         </div>
       </div>
