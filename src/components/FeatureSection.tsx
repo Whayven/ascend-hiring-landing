@@ -14,37 +14,37 @@ const features = [
   {
     name: 'Create job posts.',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+      'Effortlessly create and publish job posts that attract top talent across all the major job boards.',
     icon: CloudArrowUpIcon,
   },
   {
     name: 'Rapidly screen candidates.',
     description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+      'Our tailored AI analyzes every resume like a human to provide you with a ranked list of the best candidates.',
     icon: ArrowPathIcon,
   },
   {
     name: 'Automated interview scheduling.',
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
+      'Schedule screening calls and interviews with candidates autonomously through our platform',
     icon: UserGroupIcon,
   },
   {
     name: 'Background checks.',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+      'Streamline background checks, offer letters, and hiring contracts with automation.',
     icon: FingerPrintIcon,
   },
   {
     name: 'Powerful integrations.',
     description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+      'Quickly onboard new hires into your HR system with a single click.',
     icon: GlobeAmericasIcon,
   },
   {
     name: 'Configure to your needs.',
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ',
+      "Our system offers you the flexibility to adapt to your unique needs. Easily integrate technical skills assessments, personality tests, or any other specialized evaluation criteria into your hiring process. Craft a personalized recruitment journey that aligns perfectly with your company's goals and values.",
     icon: Cog6ToothIcon,
   },
 ];
