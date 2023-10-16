@@ -42,7 +42,7 @@ export default function Example() {
           Contact sales
         </h2>
         <p className='mt-2 text-lg leading-8 text-gray-600'>
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+          Send us a message and we'll get back to you within 24 hours.
         </p>
       </div>
       <form
