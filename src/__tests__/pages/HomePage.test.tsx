@@ -9,7 +9,7 @@ describe('Homepage', () => {
     render(<HomePage />);
 
     const heading = screen.getByText(
-      /Revolutionize Your Hiring Process with Ascend Hiring/i,
+      /Revolutionize Your Hiring Process with Ascend Hiring/i
     );
 
     expect(heading).toBeInTheDocument();

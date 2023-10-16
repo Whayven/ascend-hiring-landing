@@ -73,7 +73,7 @@ const Hero = (props: {
                 onClick={(e) => {
                   e.preventDefault();
                   const ref = refs.find(
-                    (ref) => ref.current?.id === item.href.substring(1),
+                    (ref) => ref.current?.id === item.href.substring(1)
                   );
                   if (ref) {
                     ref.current?.scrollIntoView({ behavior: 'smooth' });
