@@ -127,7 +127,7 @@ export default function PrivacyPolicy() {
           </div>
         ))}
 
-        <h2 className='mb-2 text-2xl font-semibold'>11. Contact Us</h2>
+        <h2 className='mb-2 text-2xl font-semibold'>Contact Us</h2>
         <p className='mb-4 text-gray-700'>
           For any questions or concerns regarding this Privacy Policy, please
           contact us at:
