@@ -3,6 +3,7 @@ const navigation = {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/company' },
     { name: 'Jobs', href: '' },
+    { name: 'Demo', href: 'https://develop.app.ascendhiring.com' },
   ],
 };
 
