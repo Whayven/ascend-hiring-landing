@@ -33,7 +33,7 @@ const navigation = [
   { name: 'Features', href: '#features' },
   { name: 'Benefits', href: '#benefits' },
   { name: 'Contact Us', href: '#contact' },
-  { name: 'Company', href: '#' },
+  { name: 'Company', href: '/company' },
 ];
 
 const Hero = (props: {
