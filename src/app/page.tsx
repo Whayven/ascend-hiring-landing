@@ -3,6 +3,7 @@
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import Link from 'next/link';
 import * as React from 'react';
 import { useState } from 'react';
 
@@ -33,7 +34,7 @@ const navigation = [
   { name: 'Features', href: '#features' },
   { name: 'Benefits', href: '#benefits' },
   { name: 'Contact Us', href: '#contact' },
-  { name: 'Company', href: '#' },
+  { name: 'Company', href: `/company` },
 ];
 
 const Hero = (props: {
@@ -50,10 +51,10 @@ const Hero = (props: {
           aria-label='Global'
         >
           <div className='flex lg:flex-1'>
-            <a href='#' className='-m-1.5 p-1.5'>
+            <Link href='#' className='-m-1.5 p-1.5'>
               <span className='sr-only'>Ascend Hire</span>
               {logo && <Image src={logo} alt='' height={72} width={72} />}
-            </a>
+            </Link>
           </div>
           <div className='flex lg:hidden'>
             <button
@@ -71,6 +72,7 @@ const Hero = (props: {
                 key={item.name}
                 href={item.href}
                 onClick={(e) => {
+                  if (!item.href.startsWith('#')) return;
                   e.preventDefault();
                   const ref = refs.find(
                     (ref) => ref.current?.id === item.href.substring(1)
