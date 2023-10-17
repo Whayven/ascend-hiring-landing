@@ -28,6 +28,10 @@ export default function ContactForm() {
   } = useForm<IFormInput>();
 
   const onSubmit: SubmitHandler<IFormInput> = async (data: IFormInput) => {
+    if (!agreed) {
+      toast.error('Please agree to our privacy policy');
+      return;
+    }
     const request = {
       method: 'POST',
       headers: {
