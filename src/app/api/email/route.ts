@@ -29,7 +29,6 @@ export async function POST(req: Request) {
     await sgMail.send(content);
     return NextResponse.json({ message: 'Message sent successfully' });
   } catch (error) {
-    console.error('Error sending email', error);
     return NextResponse.error();
   }
 }
