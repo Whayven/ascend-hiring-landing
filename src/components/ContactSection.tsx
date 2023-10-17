@@ -1,27 +1,46 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+/* eslint-disable no-console */
 import { Switch } from '@headlessui/react';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { useState } from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
+
+interface IFormInput {
+  firstName: string;
+  lastName: string;
+  company: string;
+  email: string;
+  message: string;
+}
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Example() {
+export default function ContactForm() {
   const [agreed, setAgreed] = useState(false);
+
+  const { register, handleSubmit } = useForm<IFormInput>();
+
+  const onSubmit: SubmitHandler<IFormInput> = async (data: IFormInput) => {
+    const request = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    };
+
+    try {
+      const response = await fetch('/api/email', request);
+
+      if (response.ok) {
+        console.log('Email sent successfully');
+      } else {
+        console.error('Failed to send the email');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
 
   return (
     <div className='relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8'>
@@ -39,15 +58,14 @@ export default function Example() {
       </div>
       <div className='mx-auto max-w-2xl text-center'>
         <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-          Contact sales
+          Join The Waitlist!
         </h2>
         <p className='mt-2 text-lg leading-8 text-gray-600'>
-          Send us a message and we'll get back to you within 24 hours.
+          Let's keep in touch! We'll let you know when we're ready to launch.
         </p>
       </div>
       <form
-        action='#'
-        method='POST'
+        onSubmit={handleSubmit(onSubmit)}
         className='mx-auto mt-16 max-w-xl sm:mt-20'
       >
         <div className='grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2'>
@@ -60,9 +78,9 @@ export default function Example() {
             </label>
             <div className='mt-2.5'>
               <input
+                {...register('firstName', { required: true })} // Updated this line
                 type='text'
-                name='first-name'
-                id='first-name'
+                id='firstName' // Updated this line
                 autoComplete='given-name'
                 className='focus:ring-primary-600 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
               />
@@ -77,9 +95,9 @@ export default function Example() {
             </label>
             <div className='mt-2.5'>
               <input
+                {...register('lastName', { required: true })} // Updated this line
                 type='text'
-                name='last-name'
-                id='last-name'
+                id='lastName'
                 autoComplete='family-name'
                 className='focus:ring-primary-600 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
               />
@@ -94,8 +112,8 @@ export default function Example() {
             </label>
             <div className='mt-2.5'>
               <input
+                {...register('company', { required: true })} // Updated this line
                 type='text'
-                name='company'
                 id='company'
                 autoComplete='organization'
                 className='focus:ring-primary-600 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
@@ -111,49 +129,15 @@ export default function Example() {
             </label>
             <div className='mt-2.5'>
               <input
+                {...register('email', { required: true })} // Updated this line
                 type='email'
-                name='email'
                 id='email'
                 autoComplete='email'
                 className='focus:ring-primary-600 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
               />
             </div>
           </div>
-          <div className='sm:col-span-2'>
-            <label
-              htmlFor='phone-number'
-              className='block text-sm font-semibold leading-6 text-gray-900'
-            >
-              Phone number
-            </label>
-            <div className='relative mt-2.5'>
-              <div className='absolute inset-y-0 left-0 flex items-center'>
-                <label htmlFor='country' className='sr-only'>
-                  Country
-                </label>
-                <select
-                  id='country'
-                  name='country'
-                  className='focus:ring-primary-600 h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm'
-                >
-                  <option>US</option>
-                  <option>CA</option>
-                  <option>EU</option>
-                </select>
-                <ChevronDownIcon
-                  className='pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400'
-                  aria-hidden='true'
-                />
-              </div>
-              <input
-                type='tel'
-                name='phone-number'
-                id='phone-number'
-                autoComplete='tel'
-                className='focus:ring-primary-600 block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
-              />
-            </div>
-          </div>
+
           <div className='sm:col-span-2'>
             <label
               htmlFor='message'
@@ -163,7 +147,7 @@ export default function Example() {
             </label>
             <div className='mt-2.5'>
               <textarea
-                name='message'
+                {...register('message')} // Updated this line
                 id='message'
                 rows={4}
                 className='focus:ring-primary-600 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6'
