@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import { Switch } from '@headlessui/react';
+import Link from 'next/link';
 import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
@@ -178,9 +179,12 @@ export default function ContactForm() {
             </div>
             <Switch.Label className='text-sm leading-6 text-gray-600'>
               By selecting this, you agree to our{' '}
-              <a href='#' className='text-primary-600 font-semibold'>
+              <Link
+                href='/privacy-policy'
+                className='text-primary-600 font-semibold'
+              >
                 privacy&nbsp;policy
-              </a>
+              </Link>
               .
             </Switch.Label>
           </Switch.Group>

@@ -1,8 +1,8 @@
 const navigation = {
   main: [
-    { name: 'About', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/company' },
+    { name: 'Jobs', href: '' },
   ],
 };
 

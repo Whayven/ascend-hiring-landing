@@ -1,5 +1,4 @@
 'use client';
-
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
@@ -9,6 +8,8 @@ import Footer from '@/components/Footer';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
+import { privacyPolicies } from './_data';
+
 import logo from '~/images/ascend_logo.png';
 
 const navigation = [
@@ -16,7 +17,7 @@ const navigation = [
   { name: 'Company', href: `/company` },
 ];
 
-const AboutPage = () => {
+export default function PrivacyPolicy() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -104,84 +105,46 @@ const AboutPage = () => {
           </Dialog>
         </header>
       </div>
-
       <div className='px-8 pt-24'>
-        <h1 className='mb-8 text-4xl font-bold'>About Ascend Hiring</h1>
+        <h1 className='mb-4 text-4xl font-bold'>Privacy Policy</h1>
 
-        <section className='mb-8'>
-          <h2 className='mb-4 text-3xl font-bold'>Our Story</h2>
-          <p className='text-lg'>
-            Ascend Hiring is a pioneering AI Recruiting and Onboarding company,
-            founded by the dynamic duo of Abhishek De and Wayne Foster Jr. With
-            a shared passion for revolutionizing the hiring and onboarding
-            process, Abhishek and Wayne embarked on a mission to redefine the
-            way organizations discover and engage with exceptional talent.
-          </p>
-        </section>
+        <p className='mb-6 text-gray-700'>
+          <strong>Last Updated:</strong> October 17, 2023
+        </p>
 
-        <section className='mb-8'>
-          <h2 className='mb-4 text-3xl font-bold'>What Sets Us Apart</h2>
-          <ul className='list-disc pl-5 text-lg'>
-            <li>
-              Innovation: Ascend Hiring is perpetually committed to staying at
-              the vanguard of AI and HR technology, ceaselessly refining our
-              solutions to meet the ever-evolving demands of the job market.
-            </li>
-            <li>
-              Diversity and Inclusion: We fervently advocate for diverse hiring
-              practices, firmly convinced that diverse teams are pivotal to
-              success. Our tools are thoughtfully designed to mitigate bias and
-              champion fair hiring practices.
-            </li>
-          </ul>
-        </section>
+        {privacyPolicies.map((item, i) => (
+          <div key={i} className='mb-6'>
+            <h2 className='mb-2 text-2xl font-semibold'>{item.title}</h2>
+            <p className='text-gray-700'>
+              {item.content.split('\n').map((str, index, array) => (
+                <>
+                  {str}
+                  {/* Avoid adding a <br /> after the last line */}
+                  {index === array.length - 1 ? null : <br />}
+                </>
+              ))}
+            </p>
+          </div>
+        ))}
 
-        <section className='mb-8'>
-          <h2 className='mb-4 text-3xl font-bold'>Our Mission</h2>
-          <p className='text-lg'>
-            Our mission is underpinned by the aspiration to create a world where
-            the processes of recruitment and onboarding become catalysts for
-            growth, connection, and triumph. We are unwavering in our dedication
-            to harness the capabilities of AI-driven solutions, ensuring that
-            the recruitment and onboarding experience is characterized by
-            transparency, equity, and efficiency, ultimately fostering the
-            prosperity of businesses and individuals alike.
-          </p>
-        </section>
-
-        <section className='mb-8'>
-          <h2 className='mb-4 text-3xl font-bold'>Our priorities</h2>
-          <ul className='list-disc pl-5 text-lg'>
-            <li>
-              User-Centric Approach: Our unwavering commitment to prioritizing
-              user experience is manifested through the creation of intuitive,
-              user-friendly platforms for both job seekers and employers.
-            </li>
-            <li>
-              Data Security: We accord the utmost priority to data security,
-              diligently implementing robust measures to safeguard the personal
-              information of our users and clients.
-            </li>
-          </ul>
-        </section>
-
-        <section className='mb-8'>
-          <h2 className='mb-4 text-3xl font-bold'>Join Us on the Journey</h2>
-          <p className='text-lg'>
-            At Ascend Hiring, we cordially invite you to partake in this
-            exhilarating journey to redefine the realms of recruitment and
-            onboarding. Whether you are a job seeker in pursuit of your dream
-            career or an employer in search of exceptional talent, we stand
-            ready to provide unwavering support at every juncture. Together, we
-            can ascend to new heights within the realm of hiring and HR. We
-            express our sincere gratitude for selecting Ascend Hiring as your
-            strategic partner on this transformative journey
-          </p>
-        </section>
+        <h2 className='mb-2 text-2xl font-semibold'>11. Contact Us</h2>
+        <p className='mb-4 text-gray-700'>
+          For any questions or concerns regarding this Privacy Policy, please
+          contact us at:
+        </p>
+        <ul className='list-disc pl-6'>
+          <li className='mb-2 text-gray-700'>
+            Email:{' '}
+            <a
+              href='mailto:support@ascendhiring.com'
+              className='text-indigo-600 hover:underline'
+            >
+              support@ascendhiring.com
+            </a>
+          </li>
+        </ul>
       </div>
       <Footer />
     </div>
   );
-};
-
-export default AboutPage;
+}
