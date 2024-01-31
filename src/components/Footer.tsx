@@ -4,6 +4,7 @@ const navigation = {
     { name: 'About', href: '/company' },
     { name: 'Jobs', href: '' },
     { name: 'Demo', href: 'https://ascend-hiring.vercel.app/' },
+    { name: 'Blog', href: '/blog' },
   ],
 };
 
