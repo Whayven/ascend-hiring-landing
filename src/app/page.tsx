@@ -30,7 +30,7 @@ import logo from '~/images/ascend_logo.png';
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
 
-const navigation = [
+export const navigation = [
   { name: 'Features', href: '#features' },
   { name: 'Benefits', href: '#benefits' },
   { name: 'Contact Us', href: '#contact' },
