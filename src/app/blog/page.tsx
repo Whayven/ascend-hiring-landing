@@ -10,9 +10,14 @@ import Footer from '@/components/Footer';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
-import { navigation } from '@/app/page';
-
 import logo from '~/images/ascend_logo.png';
+
+const navigation = [
+  { name: 'Features', href: '#features' },
+  { name: 'Benefits', href: '#benefits' },
+  { name: 'Contact Us', href: '#contact' },
+  { name: 'Company', href: `/company` },
+];
 
 const BlogPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
