@@ -1,3 +1,10 @@
+---
+featured: false
+title: 'Candidate Management'
+author: 'Abhishek De'
+preview: 'As recruiters struggle to navigate through the clutter, valuable candidates slip through the cracks'
+---
+
 ## Navigating the ATS Maze:
 
 # Simplifying Candidate Management

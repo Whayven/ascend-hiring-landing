@@ -1,3 +1,10 @@
+---
+featured: false
+title: 'Retaining Top Talent'
+author: 'Abhishek De'
+preview: 'As recruiters grapple with burnout and disengagement, companies risk losing'
+---
+
 ## Cultivating a Culture of Empowerment:
 
 # Retaining Top Talent in the Digital Era

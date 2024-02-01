@@ -1,6 +1,6 @@
 //import { Container, Typography } from '@material-ui/core';
 import fs from 'fs';
-import Link from 'next/link';
+import matter from 'gray-matter'; // Used to extract frontmatter metadata
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
@@ -9,12 +9,13 @@ import { NavigationHeader } from '@/components/NavigationHeader';
 
 const BlogPage = ({ params }: { params: { id: string } }) => {
   const markdown = fs.readFileSync(`src/app/_posts/${params.id}.md`, 'utf8');
-
+  // Parse frontmatter and content using gray-matter
+  const { content } = matter(markdown);
   return (
     <div className='flex min-h-screen flex-col px-2'>
       <NavigationHeader />
       <main className='flex flex-1 flex-col md:flex-row md:px-20 md:py-12'>
-        <aside className='mt-12 md:mt-20 md:w-80 md:pl-8'>
+        {/* <aside className='mt-12 md:mt-20 md:w-80 md:pl-8'>
           <div className='mb-8'>
             <h2 className='text-lg font-semibold'>Categories</h2>
             <ul className='mt-2 space-y-2'>
@@ -73,12 +74,12 @@ const BlogPage = ({ params }: { params: { id: string } }) => {
               </li>
             </ul>
           </div>
-        </aside>
+        </aside> */}
         <div
           className='blog-content'
           style={{ marginRight: '80px', marginLeft: '40px' }}
         >
-          <ReactMarkdown>{markdown}</ReactMarkdown>
+          <ReactMarkdown>{content}</ReactMarkdown>
         </div>
       </main>
       <Footer />

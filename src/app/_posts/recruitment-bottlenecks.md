@@ -1,3 +1,10 @@
+---
+featured: false
+title: 'Recruitment Bottlenecks'
+author: 'Abhishek De'
+preview: 'recruiters can bid farewell to endless email chains and spreadsheet chaos, reclaiming precious'
+---
+
 ## The Time Crunch:
 
 # Addressing the Recruitment Bottleneck
