@@ -37,7 +37,7 @@ export const BlogList = () => {
                 {post.metadata.title}
               </h3>
               <p className='text-gray-500 dark:text-gray-400'>
-                {post.metadata.author}
+                By {post.metadata.author}
               </p>
               <p className='text-gray-600 dark:text-gray-300'>
                 {post.metadata.preview}...

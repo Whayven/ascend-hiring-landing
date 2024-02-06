@@ -41,7 +41,7 @@ const FeaturedBlog = () => {
       <div className='mt-4'>
         <h2 className='text-3xl font-bold capitalize'>{post.metadata.title}</h2>
         <p className='text-gray-500 dark:text-gray-400'>
-          {post.metadata.author}
+          By {post.metadata.author}
         </p>
         <p className='text-gray-600 dark:text-gray-300'>
           {post.metadata.preview}...
