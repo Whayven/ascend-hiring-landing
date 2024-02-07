@@ -77,7 +77,7 @@ const BlogPage = ({ params }: { params: { id: string } }) => {
                     new Date(a.metadata.date).getTime()
                   );
                 })
-                .filter((post, i) => {
+                .filter((_post, i) => {
                   return i < 3;
                 })
                 .map((post) => (
