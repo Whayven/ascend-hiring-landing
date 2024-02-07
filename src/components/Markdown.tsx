@@ -35,6 +35,7 @@ const MarkdownComponents: object = {
             className='mx-auto mt-4 aspect-video overflow-hidden rounded-lg object-cover sm:max-w-xl lg:max-w-full'
             alt={alt}
             priority={priority}
+            quality={100}
           />
           {hasCaption ? (
             <div className='caption' aria-label={caption}>

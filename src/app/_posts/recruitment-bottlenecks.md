@@ -11,6 +11,8 @@ date: '2024-02-01'
 
 # Addressing the Recruitment Bottleneck
 
+![cover {1200x200} {priority} ](/images/recruitment_bottlenecks.jpeg)
+
 \
 Recruiters juggle multiple responsibilities daily, from sourcing candidates to coordinating interviews and managing communications. However, the burden of manual scheduling and candidate tracking consumes valuable time and energy, diverting focus from strategic recruitment initiatives.
 

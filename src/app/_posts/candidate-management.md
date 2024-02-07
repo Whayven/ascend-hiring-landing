@@ -11,7 +11,7 @@ date: '2024-02-01'
 
 # Simplifying Candidate Management
 
-![cover {1200x20} {priority} ](/images/optimistic-future.jpeg)
+![cover {1200x200} {priority} ](/images/simplyfying_ats.jpg)
 
 \
 The Applicant Tracking System, once hailed as a recruitment game-changer, has evolved into a labyrinth of candidate profiles and outdated information. As recruiters struggle to navigate through the clutter, valuable candidates slip through the cracks, leading to missed opportunities and lost talent.
