@@ -1,0 +1,9 @@
+/* FILEPATH: /ascend-hiring-landing/src/app/blog/[id]/style.css */
+
+/* Style for the image */
+img [alt='cover'] {
+  max-width: 600px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
