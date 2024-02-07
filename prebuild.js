@@ -1,18 +1,19 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 // eslint-disable-next-line no-console
 console.log('********* PREBUILDING');
-import { promises } from 'fs';
-import { join } from 'node:path';
+const path = require('node:path');
+const fs = require('fs');
 const baseDir = process.cwd();
 
 const prebuildScripts = async () => {
-  const file = join(
+  const file = path.join(
     baseDir,
     '/node_modules',
     'next/dist/server/require-hook.js'
   );
 
-  const content = await promises.readFile(file, 'utf-8');
-  await promises.writeFile(
+  const content = await fs.promises.readFile(file, 'utf-8');
+  await fs.promises.writeFile(
     file,
     content.replace(
       'if (process.env.__NEXT_PRIVATE_PREBUNDLED_REACT) {',
