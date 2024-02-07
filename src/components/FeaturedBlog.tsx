@@ -34,9 +34,9 @@ const FeaturedBlog = () => {
       <Image
         alt='Cover image'
         className='aspect-video overflow-hidden rounded-lg object-cover'
-        height='400'
+        height='100'
         src='/images/optimistic-future.jpeg'
-        width='1200'
+        width='1000'
       />
       <div className='mt-4'>
         <h2 className='text-3xl font-bold capitalize'>{post.metadata.title}</h2>

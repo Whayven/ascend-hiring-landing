@@ -3,6 +3,8 @@ featured: false
 title: 'Recruitment Bottlenecks'
 author: 'Abhishek De'
 preview: 'recruiters can bid farewell to endless email chains and spreadsheet chaos, reclaiming precious'
+category: 'Recruitment'
+date: '2024-02-01'
 ---
 
 ## The Time Crunch:

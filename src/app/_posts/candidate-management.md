@@ -3,11 +3,15 @@ featured: false
 title: 'Candidate Management'
 author: 'Abhishek De'
 preview: 'As recruiters struggle to navigate through the clutter, valuable candidates slip through the cracks'
+category: 'Candidates'
+date: '2024-02-01'
 ---
 
 ## Navigating the ATS Maze:
 
 # Simplifying Candidate Management
+
+![cover {1200x20} {priority} ](/images/optimistic-future.jpeg)
 
 \
 The Applicant Tracking System, once hailed as a recruitment game-changer, has evolved into a labyrinth of candidate profiles and outdated information. As recruiters struggle to navigate through the clutter, valuable candidates slip through the cracks, leading to missed opportunities and lost talent.
