@@ -11,7 +11,7 @@ date: '2024-02-01'
 
 # Ascend Hiring's Vision
 
-![cover {1200x200} {priority} ](/images/optimistic-future.jpeg)
+![The Future of Recruitment {1200x200} {priority} ](/images/optimistic-future.jpeg)
 
 \
 As we stand at the precipice of a new era in recruitment, Ascend Hiring remains steadfast in its commitment to redefining industry norms and empowering recruiters to reach new heights of success. By harnessing the power of automation and data-driven insights, Ascend Hiring paves the way for a future where recruitment transcends boundaries and embraces limitless possibilities.

@@ -12,39 +12,39 @@ import backgroundImage from '~/images/applicant_screenshot.png';
 
 const features = [
   {
-    name: 'Create job posts.',
+    name: 'Create Job Posts.',
     description:
       'Effortlessly create and publish job posts that attract top talent across all the major job boards.',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'Rapidly screen candidates.',
+    name: 'Rapidly Screen Candidates.',
     description:
-      'Our tailored AI analyzes every resume like a human to provide you with a ranked list of the best candidates.',
+      'Our tailored AI analyzes each resume like a human to provide you with a ranked list of the best candidates.',
     icon: ArrowPathIcon,
   },
   {
-    name: 'Automated interview scheduling.',
+    name: 'Automated Interview Scheduling.',
     description:
       'Schedule screening calls and interviews with candidates autonomously through our platform.',
     icon: UserGroupIcon,
   },
   {
-    name: 'Background checks.',
+    name: 'Background Checks.',
     description:
       'Streamline background checks, offer letters, and hiring contracts with automation.',
     icon: FingerPrintIcon,
   },
   {
-    name: 'Powerful integrations.',
+    name: 'Powerful Integrations.',
     description:
-      'Quickly onboard new hires into your HR system with a single click.',
+      'Quickly onboard new hires into your existing HR system with a single click.',
     icon: GlobeAmericasIcon,
   },
   {
-    name: 'Configure to your needs.',
+    name: 'Configure to your Needs.',
     description:
-      "Easily integrate technical skills assessments, personality tests, or any other specialized evaluation criteria into your hiring process. Craft a personalized recruitment journey that aligns perfectly with your company's goals and values.",
+      "Easily integrate technical skills assessments, personality tests, and other specialized criteria into your hiring process. Craft a personalized recruitment journey that aligns perfectly with your company's goals and values.",
     icon: Cog6ToothIcon,
   },
 ];
@@ -59,14 +59,14 @@ export default function FeatureSection() {
           </h2>
           <p className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
             Need quality hires quickly? No problem. We can take you from job
-            posting to onboarding under 2 weeks.
+            posting to onboarding under a week.
           </p>
           <p className='mt-6 text-lg leading-8 text-gray-600'>
-            Our innovative solutions empower you to achieve top-tier talent
-            acquisition without delay. Streamline your hiring process, access
-            the best candidates, and meet your staffing needs with unparalleled
-            efficiency. Say goodbye to recruitment roadblocks, and welcome speed
-            and quality to your workforce.
+            Our innovative solutions empower you to acquire Top-Tier Talent
+            without delay. Simplify your hiring process, access the best
+            candidates, and meet your staffing needs with unparalleled
+            efficiency. Say goodbye to recruitment roadblocks, and welcome
+            quality and speed to your workforce.
           </p>
         </div>
       </div>
@@ -74,7 +74,8 @@ export default function FeatureSection() {
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
           <Image
             src={backgroundImage}
-            alt='App screenshot'
+            title='Ascend Hiring Recruitment ATS Software Screenshot'
+            alt='Recruitment ATS Software Screenshot'
             className='mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10'
             width={2432}
             height={1442}

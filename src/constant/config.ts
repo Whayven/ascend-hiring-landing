@@ -1,6 +1,8 @@
 export const siteConfig = {
-  title: 'Ascend Hiring',
+  name: 'Ascend Hiring',
+  title:
+    'Best ATS for Rapid Candidate Matching With Automated Interview Scheduling',
   description:
-    'An AI powered ATS that helps you find the best candidates for your company.',
+    'A Next Generation ATS that Connects you with the Best Candidates for your Company.',
   url: 'https://ascendhiring.com',
 };

@@ -14,6 +14,15 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.title}`,
   },
   description: siteConfig.description,
+  keywords: [
+    'Best ATS for Startups',
+    'Best ATS for Staffing',
+    'ATS',
+    'Hiring',
+    'Recruitment',
+    'Interview',
+    'Scheduling',
+  ],
   robots: { index: true, follow: true },
   // !STARTERCONF this is the default favicon, you can generate your own from https://realfavicongenerator.net/
   // ! copy to /favicon folder
@@ -27,7 +36,7 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     title: siteConfig.title,
     description: siteConfig.description,
-    siteName: siteConfig.title,
+    siteName: siteConfig.name,
     images: [`${siteConfig.url}/images/og.png`],
     type: 'website',
     locale: 'en_US',
