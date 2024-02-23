@@ -53,7 +53,14 @@ const Hero = (props: {
           <div className='flex lg:flex-1'>
             <Link href='#' className='-m-1.5 p-1.5'>
               <span className='sr-only'>Ascend Hiring</span>
-              {logo && <Image src={logo} alt='' height={72} width={72} />}
+              {logo && (
+                <Image
+                  src={logo}
+                  alt='Ascend Hiring ATS Candidate Management Software'
+                  height={72}
+                  width={72}
+                />
+              )}
             </Link>
           </div>
           <div className='flex lg:hidden'>

@@ -30,8 +30,15 @@ export default function PrivacyPolicy() {
           >
             <div className='flex lg:flex-1'>
               <a href='#' className='-m-1.5 p-1.5'>
-                <span className='sr-only'>Ascend Hire</span>
-                {logo && <Image src={logo} alt='' height={72} width={72} />}
+                <span className='sr-only'>Ascend Hiring</span>
+                {logo && (
+                  <Image
+                    src={logo}
+                    alt='Ascend Hiring ATS Candidate Management Software'
+                    height={72}
+                    width={72}
+                  />
+                )}
               </a>
             </div>
             <div className='flex lg:hidden'>
