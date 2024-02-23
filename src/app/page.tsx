@@ -104,7 +104,7 @@ const Hero = (props: {
                 <Image
                   className='h-8 w-auto'
                   src={logo}
-                  alt=''
+                  alt='Ascend Hiring ATS Candidate Management Software'
                   height={84}
                   width={84}
                 />
