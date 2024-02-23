@@ -33,6 +33,7 @@ const FeaturedBlog = () => {
     <div>
       <Image
         alt='Cover image'
+        title='Optimistic Future'
         className='aspect-video overflow-hidden rounded-lg object-cover'
         height='100'
         src='/images/optimistic-future.jpeg'

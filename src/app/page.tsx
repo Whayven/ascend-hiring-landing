@@ -52,8 +52,15 @@ const Hero = (props: {
         >
           <div className='flex lg:flex-1'>
             <Link href='#' className='-m-1.5 p-1.5'>
-              <span className='sr-only'>Ascend Hire</span>
-              {logo && <Image src={logo} alt='' height={72} width={72} />}
+              <span className='sr-only'>Ascend Hiring</span>
+              {logo && (
+                <Image
+                  src={logo}
+                  alt='Ascend Hiring ATS Candidate Management Software'
+                  height={72}
+                  width={72}
+                />
+              )}
             </Link>
           </div>
           <div className='flex lg:hidden'>
@@ -100,11 +107,11 @@ const Hero = (props: {
           <Dialog.Panel className='fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
             <div className='flex items-center justify-between'>
               <a href='#' className='-m-1.5 p-1.5'>
-                <span className='sr-only'>Ascend Hire</span>
+                <span className='sr-only'>Ascend Hiring</span>
                 <Image
                   className='h-8 w-auto'
                   src={logo}
-                  alt=''
+                  alt='Ascend Hiring ATS Candidate Management Software'
                   height={84}
                   width={84}
                 />
@@ -157,7 +164,8 @@ const Hero = (props: {
             </h1>
             <p className='mt-6 text-lg leading-8 text-gray-600'>
               We use AI and automation to streamline your recruitment process,
-              saving time and resources while finding the perfect candidates.
+              saving you time and resources while finding the perfect
+              candidates.
             </p>
             <div className='mt-10 flex items-center justify-center gap-x-6'>
               <Button

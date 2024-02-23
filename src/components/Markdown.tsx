@@ -34,6 +34,7 @@ const MarkdownComponents: object = {
             height={Number(height)}
             className='mx-auto mt-4 aspect-video overflow-hidden rounded-lg object-cover sm:max-w-xl lg:max-w-full'
             alt={alt}
+            title={alt}
             priority={priority}
             quality={100}
           />
