@@ -1,6 +1,6 @@
 ---
 featured: false
-title: 'How AI helps Recruiters'
+title: 'How AI Helps Recruiters'
 author: 'Abhishek De'
 preview: 'The faster you can identify and engage with potential candidates, the higher your chances of securing top talent.'
 category: 'Recruiters'
