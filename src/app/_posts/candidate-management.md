@@ -7,7 +7,7 @@ category: 'Candidates'
 date: '2024-02-01'
 ---
 
-## Navigating the ATS Maze:
+### Navigating the ATS Maze:
 
 # Simplifying Candidate Management
 

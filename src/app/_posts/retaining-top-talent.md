@@ -7,7 +7,7 @@ category: 'Recruitment'
 date: '2024-01-31'
 ---
 
-## Cultivating a Culture of Empowerment:
+### Cultivating a Culture of Empowerment:
 
 # Retaining Top Recruiters in the Digital Era
 
