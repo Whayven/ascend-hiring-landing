@@ -78,7 +78,7 @@ The goal is to use the feedback from candidates to identify areas of dissatisfac
 
 ### Prioritize fairness and equity in all decision
 
-Fairness refers to making judgments that are free from discrimination, bias, favoritism, or self-interest. It's about making decisions that are just, equitable, and right. Equity, on the other hand, is about ensuring that everyone has access to the same opportunities. Sometimes, achieving equity requires treating people differently to account for disparities in their circumstances or abilities
+Fairness refers to making judgments that are free from discrimination, bias, favoritism, or self-interest. It's about making decisions that are just, equitable, and right. Equity, on the other hand, is about ensuring that everyone has access to the same opportunities.
 
 ### What You Can Do
 
